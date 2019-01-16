@@ -13,6 +13,7 @@ p {
 <body>
 <h1> <center>I think this qualifies for a surprise </center></h1>
 <p id="demo" ></p>
+  <p id = "info">You know the reason for this Countdown! I am counting down too!</p>
 
 <script>
 function getRandomColor() {
@@ -28,6 +29,8 @@ function getRandomColor() {
 
 function setRandomColor() {
   document.getElementById("demo").style.color = getRandomColor();
+  document.getElementById("info").style.color = getRandomColor();
+  
 }
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 12, 2024 00:00:00").getTime();
