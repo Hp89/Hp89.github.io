@@ -13,7 +13,7 @@ p {
 <body>
 <h1> <center>I think this qualifies for a surprise </center></h1>
 <p id="demo" ></p>
-  <p id = "info">You know the reason for this Countdown! I am counting down too!</p>
+  <p id = "info"></p>
 
 <script>
 function getRandomColor() {
@@ -52,8 +52,9 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = days + " d " + hours + " h "
+  + minutes + " m " + seconds + " s ";
+  document.getElementById("info").innerHTML = "You know the reason for this Countdown! I am counting down too!";
 
   // If the count down is over, write some text
   if (distance < 0) {
